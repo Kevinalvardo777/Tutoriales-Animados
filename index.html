@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+  <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>CLASES ANIMADAS</title>
+</head>
+<body>
+ <div id="tutorial">
+   <h1>ESCRIBA SU TUTORIAL</h1>
+ </div>
+ <div class="caja">
+   <input type="text" name="text">
+   <a href="#" class="say">Escuchar Texto!</a>
+   <audio src="" hidden class=speech></audio>
+ </div>
+ <div class="audiof">
+   <img class="audio" src="imagenes/audio.png" alt="tutorial clases">
+ </div>
+ <div class="animacionF">
+   <img class="animacion" src="imagenes/profesora.gif" alt="tutorial clases">
+ </div>
+ 
+  <script>
+    $("a.say").on('click', function(e){
+      e.preventDefault();
+      var text = $("input[name=text]").val();
+      responsiveVoice.speak(text,"Spanish Female");
+      text=encodeURIComponent(text);
+      var url="http://"
+    });
+
+
+
+
+  </script>
+</body>
+</html>﻿
