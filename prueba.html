@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,70 +14,59 @@
   <title>CLASES ANIMADAS</title>
 </head>
 <body>
- <nav>
-    <div class="nav-wrapper green darken-1">
-      <a href="#" class="brand-logo">AnimaText</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Nosotros</a></li>
-        <li><a href="badges.html">Tutorial</a></li>
-        <li><a href="collapsible.html">Contáctanos</a></li>
-      </ul>
-    </div>
-  </nav>
-   <!-- Navbar goes here -->
-     <div class="audiof">
-      <h3>Personajes</h3>
-       <img class="audio" src="imagenes/audio.png" alt="tutorial clases">
-       <img class="descarga" src="imagenes/descarga.png" alt="tutorial clases">
-     </div>
-
+  
+     <nav>
+        <div class="nav-wrapper green lighter-4">
+          <a href="#" class="brand-logo">AnimaText</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Nosotros</a></li>
+            <li><a href="badges.html">Tutorial</a></li>
+            <li><a href="collapsible.html">Contáctanos</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+    <!-- Navbar goes here -->
 
     <!-- Page Layout here -->
     <div class="row">
-      
-      <div class="col s12 m4 13" id="izquierda"> <!-- Note that "m4 l3" was added -->
+
+      <div class="col-3" id="pane1"> <!-- Note that "m4 l3" was added -->
         <!-- Grey navigation panel
 
               This content will be:
           3-columns-wide on large screens,
           4-columns-wide on medium screens,
           12-columns-wide on small screens  -->
+               
+                <div class="p" id="escoger"></div>
 
       </div>
 
-      <div class="col s12 m4 l9"> <!-- Note that "m8 l9" was added -->
+      <div class="col-9" id="pane2"> <!-- Note that "m8 l9" was added -->
         <!-- Teal page content
 
               This content will be:
           9-columns-wide on large screens,
           8-columns-wide on medium screens,
           12-columns-wide on small screens  -->
-
-          <div class="caja">
-             <input type="text" name="text">
-             <a href="#" class="say">Escuchar Texto!</a>
-             <audio src="" hidden class=speech></audio>
-          </div>
-          <!--<div class="animacionF">-->
+           <p>Personajes</p>
+          <div class="p" id="personajes">
+          <div class="animacionF">
              <img class="animacion" src="imagenes/profesora.gif" alt="tutorial clases">
-           <!--</div> --> 
+           </div>
+            </div>
+          
+      </div>
+          </div>
       </div>
 
+       
+
     </div>
+          
  
-  <script>
-    $("a.say").on('click', function(e){
-      e.preventDefault();
-      var text = $("input[name=text]").val();
-      responsiveVoice.speak(text,"Spanish Female");
-      text=encodeURIComponent(text);
-      var url="http://"
-    });
-
-
-
-
-  </script>
+  
      <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
